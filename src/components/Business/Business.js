@@ -1,18 +1,13 @@
 import React from "react";
-import './Business.css'
+import "./Business.css";
 
 class Business extends React.Component {
-
   render() {
-    console.log('This is the BUSINESS!:',this.props.business)
     return (
       <>
         <div className="Business">
           <div className="image-container">
-            <img
-              src={this.props.business.imageSrc}
-              alt=""
-            />
+            <img src={this.props.business.imageSrc} alt="" />
           </div>
           <h2>{this.props.business.name}</h2>
           <div className="Business-information">
